@@ -20,6 +20,7 @@ function signUp() {
         for (let i = 0; i < users.length; i++) {
             if (users[i].email.toLowerCase() == signupEmail.value.toLowerCase()) {
                 exitFelids.innerHTML = `<span class"text-danger my-3">Email Already Exist  </span>`
+                return false
             }
         }
         getUserData()
@@ -41,4 +42,4 @@ function getUserData() {
 // Event BTN ==>>
 signupBtn.addEventListener('click', function() {
     signUp()
-});
+})
