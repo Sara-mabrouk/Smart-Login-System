@@ -13,14 +13,14 @@ This project implements a basic smart login system with three main forms: login,
 - Validates email and password.
 - Redirects to home page upon successful login.
 
-![Login Form](./image/screens/login.jpeg)
+![Login Form](./image/screens/Macbook-Air-127.0.0.1%20(4).png)
 
 **2. Signup Form**
 
 - Requires name, email, and password.
 - Validates input and stores details in localStorage.
 
-![Signup Form](./image/screens/signup.jpeg)
+![Signup Form](./image/screens/Macbook-Air-127.0.0.1%20(2).png)
 
 **Validation ensures that:**
 
@@ -32,7 +32,7 @@ This project implements a basic smart login system with three main forms: login,
 
 - Simple welcome page for logged-in users.
 
-![Home Page](./image/screens/home.jpeg)
+![Home Page](./image/screens/Macbook-Air-127.0.0.1%20(3).png)
 
 ## Usage
 
