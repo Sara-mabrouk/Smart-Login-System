@@ -10,7 +10,9 @@ a {
 }
 
 a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(117, 8, 8);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
 }
 
 body {
@@ -105,15 +107,13 @@ nav {
     background-color: rgb(117, 8, 8);
 }
 
-
-/* section{
+section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/5.jpg);
     background-size: cover;
     min-height: 100vh;
     background-position: center;
+}
 
-} */
-
-#homeBox h1 {
+*/ #homeBox h1 {
     color: rgb(117, 8, 8);
 }
