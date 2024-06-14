@@ -20,7 +20,7 @@ This project implements a basic smart login system with three main forms: login,
 - Requires name, email, and password.
 - Validates input and stores details in localStorage.
 
-![Signup Form](./image/screens/Macbook-Air-127.0.0.1%20(2).png)
+![Signup Form](./image/screens/Macbook-Air-sara-mabrouk.github.io.png)
 
 **Validation ensures that:**
 
