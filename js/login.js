@@ -12,27 +12,22 @@ if (localStorage.getItem("users") != null) {
 }
 
 function logIn() {
+    if (logEmail.value == '' ||
+        logPass.value == '') {
+        success.innerHTML = `<span class"text-danger my-3"> Please Fill all Fields </span>`
+    } else {
+        for (let i = 0; i < users.length; i++) {
+            if (logEmail.value.toLowerCase() == users[i].email.toLowerCase() && logPass.value == users[i].password) {
+                success.innerHTML = `<span class"text-success my-3"> Success</span>`
 
-    for (let i = 0; i < users.length; i++) {
-        if (logEmail.value.toLowerCase() == users[i].email.toLowerCase() && logPass.value == users[i].pass) {
-            success.innerHTML = `<span class"text-danger my-3"> Success</span>`
-            localStorage.setItem('userName', JSON.stringify(users[i].name))
-            location.href = "/home.html";
+                localStorage.setItem('userName', JSON.stringify(users[i].name))
+                location.href = "/home.html";
+                return
+            }
         }
+        success.innerHTML = `<span class"text-danger my-3"> Please Sign Up </span>`
     }
 }
-
-
-if (logEmail.value == '' ||
-    logPass.value == '') {
-    success.innerHTML = `<span class"text-danger my-3"> Please Fill all Fields </span>`
-} else {
-    success.innerHTML = `<span class"text-danger my-3"> Please Sign Up </span>`
-
-}
-
-
-
 // Event BTN LogIn ==>>
 logBtn.addEventListener('click', function() {
     logIn()
