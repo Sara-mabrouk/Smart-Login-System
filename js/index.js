@@ -58,7 +58,7 @@ function getUserData() {
     };
     users.push(user);
     localStorage.setItem('users', JSON.stringify(users));
-    location.href = '/index.html';
+    location.href = 'index.html';
 }
 
 // Event BTN ==>>
