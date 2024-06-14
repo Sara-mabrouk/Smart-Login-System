@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="icon" href="image/icon.svg" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- link min-->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- link min bootstrap-->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- link Css -->
+    <link rel="stylesheet" href="Css/index.css">
+</head>
+
+<body>
+    <main>
+        <div class="container text-center">
+            <div class="row m-auto w-75 p-5">
+                <div class="col-md-12 boxContainer text-center p-3 p-md-5 rounded-2"  id="loginBox">
+                    <div class="tittle">
+                        <h1 class="my-5">Smart Login System</h1>
+                        <div class="inputform">
+                            <input type="text"
+                            class="form-control mb-4" 
+                            id="logEmail"
+                            placeholder="Enter Your E-mail" required>
+
+                            <input type="text" 
+                            class="form-control"
+                            id="logPass"
+                                placeholder="Enter Your Password" required>
+                                <div id="Success"></div>
+
+                                <button id="logBtn" class="btn btn-outline-info my-4 w-100 fw-bolder">
+                                    Log In
+                                </button>
+                                <div class="signupText d-flex justify-content-center gap-2 mt-1 text-white fw-bold">
+                                    <p>Don’t have an account?</p>
+                                    <a class="text-decoration-none" id="signupAnchor" href="/signup.html">Sign up</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--bundle script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Js main -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
