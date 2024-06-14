@@ -36,7 +36,7 @@ function logIn() {
                 success.innerHTML = `<span class=" my-3">Success</span>`;
 
                 localStorage.setItem('userName', JSON.stringify(users[i].name));
-                location.href = "/home.html";
+                location.href = "home.html";
                 return;
             }
         }
